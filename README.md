@@ -1,6 +1,6 @@
 # custom-bash-scripts
 
-Series of functions, aliases and shortcuts for bash shell (running on MacOS). Each fucntion has a brief description of its functionality.
+Series of functions, aliases and shortcuts for bash shell (tested on MacOS).
 
 ## Tools
 
