@@ -1,0 +1,6 @@
+BASTION_ACCOUNT=        // name of AWS environment 
+BASTION_PROFILE=        // name of AWS profile to use with command
+BASTION_INSTANCE_ID=    // AWS Bastion instance ID
+BASTION_AZ=             // AWS Bastion Availability Zone
+BASTION_USER=           // AWS Bastion instance user, usually ec2-user
+BASTION_DNS=            // AWS Bastion IP
