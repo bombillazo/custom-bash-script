@@ -1,8 +1,20 @@
-# custom-bash-scripts
+# custom-bash-script
 
-Series of functions, aliases and shortcuts for bash shell (tested on MacOS).
+**Tested with:** GNU bash, version 5.0.17, macOS 10.15.5
 
-## Tools
+This repo contains a series of bash shell functions and aliases to speed up and simplify command execution. They could work for other shells but I have not tried them out.
+
+## Installation
+
+There are various ways to "install" these into your bash shell environment:
+
+- Copy the contents that you want from this repo's `.bash_profile` file and paste them in your existing shell startup script (usually `.bash_profile`). 
+- Copy the `.bash_profile` file into your machine, rename it, and source it from your shell startup script using `source /path/to/file` *(This is to avoid potentially overwriting your existing `.bash_profile` file)*.
+- If you have no startup script file or if it's empty, copy the `.bash_profile` file to your machine and use it as your shell startup script.
+
+## Commands 
+
+The script contains aliases and functions for the following commands:
 
 - aws-cli
 - aws-okta
@@ -23,15 +35,15 @@ These commands are used to connect to a server or service through a Bastion in A
 
 #### Commands - Bastion
 
-The general command flow work by first pushing your public key to the bastion, then using the connect commands within a 60 second time frame to establish a connection. You can also print out the current environemnt and switch between environments (mine are setup as development and production).
+The general command flow work by first pushing your public key to the bastion, then using the connect commands within a 60-second time frame to establish a connection. You can also print out the current environment and switch between environments (mine are setup as development and production).
 
 Command | Definition
 --- | ---
 bee | Print our current bastion environment
 bce | Chance bastion environment (currently hardcoded between development and production)
-bkp | Push public key to bastion
+bkp | Push public key to the bastion
 ssh-a | Establish ssh tunnel to pass requests to RDS Aurora (port 3306)
-ssh-r | Establish ssh tunnel to pass requests to Redshift (port 5439)
+ssh-r | Establish an ssh tunnel to pass requests to Redshift (port 5439)
 
 ### DOCKER
 
@@ -67,7 +79,11 @@ pr | Prune entities specified | X |
 
 ### TERMINAL CUSTOMIZATION
 
-In this section you can modify your terminal prompt using bash prompt variable. By changing the PS1 string, color values and order of these you can specify how your terminal will look and feel. Here are some resources for more in depth customization:
+In this section, you can modify your terminal prompt using bash prompt variable. By changing the PS1 string, color values, and order of these you can specify how your terminal will look and feel. Here are some resources for more in-depth customization:
 
 - [Bash prompt variables](https://ss64.com/bash/syntax-prompt.html)
 - [Xterm color values](https://misc.flogisoft.com/bash/tip_colors_and_formatting)
+
+## Future
+
+I plan to keep expanding and adding to this script as I come up with other useful shortcuts. If you have feedback or suggestions please reach out via [twitter](https://twitter.com/bombillazo).
