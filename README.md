@@ -1,27 +1,29 @@
 # custom-bash-script
 
-**Tested with:** GNU bash, version 5.0.17, macOS 10.15.5
+**Tested with:**
 
-This repo contains a series of bash shell functions and aliases to speed up and simplify command execution. They could work for other shells but I have not tried them out.
+- GNU bash, version 5.0.17, macOS 10.15.5
+- GNU bash, version 5.0.17(1)-release (x86_64-pc-linux-gnu)
+
+This repo contains a series of bash shell functions and aliases to speed up and simplify command execution. I have tested these on **MacOS** as well as **WSL** (Windows Subsystem for Linux). Some terminal commands may vary between OSs and could work for other shells but I have not tried them out.
 
 ## Installation
 
 There are various ways to "install" these into your bash shell environment:
 
-- Copy the contents that you want from this repo's `.bash_profile` file and paste them in your existing shell startup script (usually `.bash_profile`). 
+- Copy the contents that you want from this repo's `.bash_profile` file and paste them in your existing shell startup script (usually `.bash_profile`).
 - Copy the `.bash_profile` file into your machine, rename it, and source it from your shell startup script using `source /path/to/file` *(This is to avoid potentially overwriting your existing `.bash_profile` file)*.
 - If you have no startup script file or if it's empty, copy the `.bash_profile` file to your machine and use it as your shell startup script.
 
-## Commands 
+In addition, I've created an install script to automate the installation of commonly used tools and CLIs.
 
-The script contains aliases and functions for the following commands:
+For more manual/specific installations, check these:
 
-- aws-cli
-- aws-okta
-- docker
-- git
-- python3
-- terraform
+- [aws-okta](https://github.com/segmentio/aws-okta#installing)
+- [Terraform](https://www.terraform.io/downloads.html)
+- [Pulimi](https://www.pulumi.com/docs/get-started/install/#installing-pulumi)
+- [CircleCI](https://circleci.com/docs/2.0/local-cli/#installation)
+- [caniuse-cmd](https://github.com/sgentle/caniuse-cmd#caniuse-cmd)
 
 ### BASTION CONNECT
 

@@ -1,6 +1,20 @@
+
 # Editing shortcuts
 alias v='vim'
 alias sublime='open -a "/Applications/Sublime Text.app"'
+npp() {
+		# Verify you Notepad++ installation directory
+        /mnt/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe $* &
+}
+
+# Listing files shorcuts
+alias mv='mv -i'
+alias rm='rm -i'
+alias l='ls -al'
+alias ltr='ls -ltr'
+alias lth='l -t|head'
+alias lh='ls -Shl | less'
+alias tf='tail -f -n 100'
 
 # Composer shortcuts
 alias composer="php /usr/local/bin/composer.phar"
@@ -24,8 +38,8 @@ alias dkstart='docker start'
 alias dkrestart='docker restart'
 alias dkstop='docker stop'
 alias dkkill='docker kill'
-alias dkp='docker push'
-alias dkl='docker pull'
+alias dkps='docker push'
+alias dkpl='docker pull'
 alias dkrm='docker rm'
 alias dkins='docker inspect'
 alias dkdiff='docker diff'
@@ -268,6 +282,7 @@ function gitprompt () {
 }
 PROMPT_COMMAND=gitprompt
 
+# For MacOS
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
