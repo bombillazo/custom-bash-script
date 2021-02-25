@@ -1,11 +1,11 @@
 
 # Editing shortcuts
 alias v='vim'
-alias sublime='open -a "/Applications/Sublime Text.app"'
-npp() {
-		# Verify you Notepad++ installation directory
-        /mnt/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe $* &
-}
+#alias sublime='open -a "/Applications/Sublime Text.app"'
+#npp() {
+#		# Verify you Notepad++ installation directory
+#        /mnt/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe $* &
+#}
 
 # Listing files shorcuts
 alias mv='mv -i'
@@ -17,7 +17,7 @@ alias lh='ls -Shl | less'
 alias tf='tail -f -n 100'
 
 # Composer shortcuts
-alias composer="php /usr/local/bin/composer.phar"
+#alias composer="php /usr/local/bin/composer.phar"
 
 # Docker shortcuts
 alias dkcb='docker-compose build'
@@ -76,7 +76,7 @@ alias gsd='git svn dcommit'
 alias gsr='git svn rebase'
 
 # Terraform shortcuts
-alias tfe='terraform'
+#alias tfe='terraform'
 
 # Python shortcuts
 alias python=python3
@@ -283,6 +283,6 @@ function gitprompt () {
 PROMPT_COMMAND=gitprompt
 
 # For MacOS
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
-fi
+#if [ -f `brew --prefix`/etc/bash_completion ]; then
+#    . `brew --prefix`/etc/bash_completion
+#fi
