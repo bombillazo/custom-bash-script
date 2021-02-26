@@ -284,6 +284,8 @@ function gitprompt () {
 }
 PROMPT_COMMAND=gitprompt
 
+PATH="$PATH:$(yarn global bin)"
+
 # For MacOS
 #if [ -f `brew --prefix`/etc/bash_completion ]; then
 #    . `brew --prefix`/etc/bash_completion
