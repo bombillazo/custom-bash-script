@@ -284,6 +284,12 @@ function gitprompt () {
 }
 PROMPT_COMMAND=gitprompt
 
+# Must reinstall global packages if nvm node version changes
+# e.g. nvm install v6.9.2 --reinstall-packages-from=v4.4.5 
+
+NODE_VERSION=$(node -v)
+PATH=/usr/local/n/versions/node/$NODE_VERSION/bin:$PATH
+
 PATH="$PATH:$(yarn global bin)"
 
 # For MacOS
