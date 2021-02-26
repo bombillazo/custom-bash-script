@@ -1,8 +1,6 @@
 # !! WARNING !!
 # ENSURE this file only uses LF new lines, NOT CRLF
 
-. ~/.bashrc
-
 # Editing shortcuts
 alias v='vim'
 #alias sublime='open -a "/Applications/Sublime Text.app"'
