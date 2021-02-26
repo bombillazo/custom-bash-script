@@ -1,7 +1,7 @@
 # !! WARNING !!
 # ENSURE this file only uses LF new lines, NOT CRLF
 
-# We must source this file since it's not sourced automatically
+# We must source this file since it is not sourced automatically
 # when ~/.bash_profile exists. ~/.profile also typically sources ~/.bashrc
 . ~/.profile
 
