@@ -284,6 +284,7 @@ function gitprompt () {
 }
 PROMPT_COMMAND=gitprompt
 
+nvm alias default node
 # Must reinstall global packages if nvm node version changes
 # e.g. nvm install v6.9.2 --reinstall-packages-from=v4.4.5 
 
