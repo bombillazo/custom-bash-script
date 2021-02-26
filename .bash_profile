@@ -1,6 +1,10 @@
 # !! WARNING !!
 # ENSURE this file only uses LF new lines, NOT CRLF
 
+# We must source this file since it's not sourced automatically
+# when ~/.bash_profile exists. ~/.profile also typically sources ~/.bashrc
+. ~/.profile
+
 # Editing shortcuts
 alias v='vim'
 #alias sublime='open -a "/Applications/Sublime Text.app"'
