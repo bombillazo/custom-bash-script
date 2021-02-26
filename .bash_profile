@@ -1,3 +1,5 @@
+# !! WARNING !!
+# ENSURE this file only uses LF new lines, NOT CRLF
 
 # Editing shortcuts
 alias v='vim'
