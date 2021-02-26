@@ -290,7 +290,8 @@ PROMPT_COMMAND=gitprompt
 NODE_VERSION=$(node -v)
 PATH=/usr/local/n/versions/node/$NODE_VERSION/bin:$PATH
 
-PATH="$PATH:$(yarn global bin)"
+YARN_PATH=$(yarn global bin)
+PATH=$YARN_PATH:$PATH
 
 # For MacOS
 #if [ -f `brew --prefix`/etc/bash_completion ]; then
