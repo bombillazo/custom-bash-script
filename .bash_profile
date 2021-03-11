@@ -88,6 +88,19 @@ alias gsr='git svn rebase'
 alias python=python3
 alias pip=pip3
 
+## HELP for shortcuts
+
+shortcuts ()
+{
+	BLUE='\033[38;5;45m'
+	NC='\033[0m' # No Color
+	BOLD='\033[1m'
+	echo ''
+	echo -e '** Keyboard Shortcuts **'
+	echo -e "$BOLD$BLUE VS Code $NC: CTRL + ] and CTRL + [ : Switch terminals (when focused in terminal)"
+	echo ''
+}
+
 ## BASTION CONNECT
 
 # bastion echo environment
@@ -288,6 +301,7 @@ function gitprompt () {
 }
 PROMPT_COMMAND=gitprompt
 
+## ENVIRONMENT SETUP
 # Must reinstall global packages if nvm node version changes
 # e.g. nvm install v6.9.2 --reinstall-packages-from=v4.4.5 
 
