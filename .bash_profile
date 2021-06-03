@@ -1,10 +1,6 @@
 # !! WARNING !!
 # ENSURE this file only uses LF new lines, NOT CRLF
 
-# We must source this file since it is not sourced automatically
-# when ~/.bash_profile exists. ~/.profile also typically sources ~/.bashrc
-. ~/.profile
-
 # Editing shortcuts
 alias v='vim'
 #alias sublime='open -a "/Applications/Sublime Text.app"'
@@ -12,6 +8,11 @@ alias v='vim'
 #		# Verify you Notepad++ installation directory
 #        /mnt/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe $* &
 #}
+
+# Openning a directory from terminal
+open() {
+	nautilus "$@" > /dev/null &
+}
 
 # Listing files shorcuts
 alias mv='mv -i'
