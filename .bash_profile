@@ -1,5 +1,7 @@
 # !! WARNING !!
 # ENSURE this file only uses LF new lines, NOT CRLF
+# Make sure your terminal as login shells
+# Ubuntu Terminal: Preferences -> Profiles -> Command -> 'Run comand as login shell'
 
 # Editing shortcuts
 alias v='vim'
@@ -11,7 +13,7 @@ alias v='vim'
 
 # Openning a directory from terminal
 open() {
-	nautilus "$@" > /dev/null &
+	nautilus "$@" &>/dev/null
 }
 
 # Listing files shorcuts
@@ -305,6 +307,9 @@ PROMPT_COMMAND=gitprompt
 ## ENVIRONMENT SETUP
 # Must reinstall global packages if nvm node version changes
 # e.g. nvm install v6.9.2 --reinstall-packages-from=v4.4.5 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 NODE_VERSION=$(node -v)
 PATH=/usr/local/n/versions/node/$NODE_VERSION/bin:$PATH
