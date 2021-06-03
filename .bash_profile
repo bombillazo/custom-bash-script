@@ -13,8 +13,13 @@ alias v='vim'
 
 # Openning a directory from terminal
 open() {
+	if [[ "$@" == "" ]]; then
+		nautilus . &>/dev/null
+		return
+	fi
 	nautilus "$@" &>/dev/null
 }
+
 
 # Listing files shorcuts
 alias mv='mv -i'
